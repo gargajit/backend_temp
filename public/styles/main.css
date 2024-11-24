@@ -1,5 +1,48 @@
+body {
+    position: relative;
+    background-image: url("../images/bird_fying_high.png"), url("../images/bg-4.jpg");
+    background-size: 80px, auto;
+    background-position: right top, center;
+    background-position-y: center;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, scroll;
+    font-size: large;
+}
+
+
 .title {
     color: crimson;
     background-color:thistle;
     padding: 5px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+.title:hover {
+    animation: rotate-back-and-forth 0.5s;
+}
+
+@keyframes rotate-back-and-forth {
+    0% {transform: rotate(0deg);}
+    30% {transform: rotate(20deg);}
+    70% {transform: rotate(-20deg);}
+    100% {transform: rotate(0deg);}
+}
+
+.about-list {
+    line-height: 1.5rem;
+    margin-bottom: 20px;
+}
+.list-item-pointer {
+    background-color: bisque;
+}
+
+a {
+    color: #73a9cf;
+    display: inline-block;
+    transition: transform 0.7s;
+}
+a:hover {
+    transform: scale(1.08, 1.08);
+    color: #44a2e5;
 }
